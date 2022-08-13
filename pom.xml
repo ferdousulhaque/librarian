@@ -6,7 +6,11 @@
 
   <groupId>com.starter.librarian</groupId>
   <artifactId>librarian</artifactId>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>books</module>
+  </modules>
 
   <name>librarian</name>
   <!-- FIXME change it to the project's website -->
@@ -27,7 +31,7 @@
         <artifactId>spring-boot-dependencies</artifactId>
         <version>${spring.boot.dependencies.version}</version>
         <type>pom</type>
-        <scope>provided</scope>
+        <scope>import</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -46,7 +50,7 @@
       <plugins>
         <plugin>
           <groupId>org.springframework.boot</groupId>
-          <artifactId>spring-boot-maven-plugin</artifactId>
+          <artifactId>spring-boot-dependencies</artifactId>
           <version>${spring.boot.maven.plugin.version}</version>
         </plugin>
       </plugins>
