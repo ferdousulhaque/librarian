@@ -1,0 +1,4 @@
+.idea
+db-data
+.env
+docker-compose.yml
