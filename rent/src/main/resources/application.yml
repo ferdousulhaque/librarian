@@ -1,10 +1,10 @@
 server:
-  port: 8080
+  port: 8081
 spring:
   application:
-    name: books
+    name: rent
   datasource:
-    url: jdbc:mysql://localhost:3307/rent
+    url: jdbc:mysql://localhost:3307/librarian
     username: admin
     password: admin
     driverClassName: com.mysql.cj.jdbc.Driver
