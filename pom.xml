@@ -12,6 +12,7 @@
     <module>books</module>
     <module>rent</module>
     <module>eurekaSrv</module>
+    <module>octopus</module>
   </modules>
 
   <name>librarian</name>
@@ -52,6 +53,10 @@
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <version>1.18.24</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-openfeign</artifactId>
     </dependency>
   </dependencies>
 

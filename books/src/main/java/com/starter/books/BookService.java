@@ -23,4 +23,8 @@ public record BookService(
     public List<Book> list(){
         return bookRepository.findAll();
     }
+
+    public Book one(Integer bookId){
+        return bookRepository.getOne(bookId);
+    }
 }

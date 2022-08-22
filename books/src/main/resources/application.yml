@@ -4,7 +4,7 @@ spring:
   application:
     name: books
   datasource:
-    url: jdbc:mysql://localhost:3307/rent
+    url: jdbc:mysql://localhost:3307/librarian
     username: admin
     password: admin
     driverClassName: com.mysql.cj.jdbc.Driver
