@@ -13,6 +13,7 @@
     <module>rent</module>
     <module>eurekaSrv</module>
     <module>octopus</module>
+      <module>users</module>
   </modules>
 
   <name>librarian</name>

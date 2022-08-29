@@ -1,17 +1,13 @@
-package com.librarian.rent;
+package com.librarian.users;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableEurekaClient
-@EnableFeignClients(
-        basePackages = "com.librarian.octopus.books"
-)
-public class RentApplication {
+public class UsersApplication {
     public static void main(String[] args) {
-        SpringApplication.run(RentApplication.class, args);
+        SpringApplication.run(UsersApplication.class, args);
     }
 }

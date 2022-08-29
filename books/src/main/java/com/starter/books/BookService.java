@@ -1,13 +1,16 @@
 package com.starter.books;
 
+import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public record BookService(
-    BookRepository bookRepository
-) {
+@AllArgsConstructor
+public class BookService {
+    @Autowired
+    private final BookRepository bookRepository;
 
     public void add(BookAddRequest request){
         Book book = Book.builder()
