@@ -25,9 +25,10 @@ public class User {
     private String contactNo;
     private String email;
 
-    @JsonIgnoreProperties
     private boolean status;
-
-    @JsonIgnoreProperties
     private String joinedOn;
+
+    public boolean getStatus() {
+        return this.status;
+    }
 }
