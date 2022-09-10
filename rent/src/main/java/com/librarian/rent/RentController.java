@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.security.Timestamp;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Slf4j
@@ -24,7 +26,15 @@ public class RentController {
         for(Integer singleBookId: rentRequest.bookIds()){
 //            System.out.println(singleBookId);
 //            if(singleBookId == 1){
-                log.info(rentService.oneBook(singleBookId).getBookName());
+//                log.info(rentService.oneBook(singleBookId).getBookName());
+                LocalDateTime rightNow = LocalDateTime.now();
+                Rented bookForRent = Rented.builder()
+                                .bookId(singleBookId)
+                                .userId(userId)
+                                .rentedOn(rightNow)
+                                .returnOn(null)
+                                .build();
+                rentService.rentABook(singleBookId, bookForRent);
 //            }
         }
         log.info(userId.toString() + rentRequest.toString());
