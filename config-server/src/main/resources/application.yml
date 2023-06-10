@@ -7,6 +7,6 @@ spring:
     config:
       server:
         git:
-          uri: "https://github.com/spring-cloud-samples/config-repo"
+          uri: "https://github.com/ferdousulhaque/librarian/tree/main/configs"
 server:
   port: 8888
