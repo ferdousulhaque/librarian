@@ -1,0 +1,3 @@
+spring:
+  cloud:
+    message: "Testing Config Server"

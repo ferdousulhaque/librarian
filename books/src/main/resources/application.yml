@@ -16,6 +16,13 @@ spring:
         dialect: org.hibernate.dialect.MySQL8Dialect
         format_sql: true
     show-sql: true
+  cloud:
+    config:
+      uri=http://localhost:8888
+    bus:
+      enabled: true
+  profile:
+    active: dev
 eureka:
   client:
     service-url:
