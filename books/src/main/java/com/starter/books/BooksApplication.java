@@ -11,7 +11,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableFeignClients(
         basePackages = "com.starter.librarian.octopus"
 )
-@RefreshScope
 public class BooksApplication  {
     public static void main(String[] args){
         SpringApplication.run(BooksApplication.class, args);
