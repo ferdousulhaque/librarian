@@ -2,9 +2,10 @@ package com.starter.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.cloud.config.server.EnableConfigServer;
 
-@Configuration
+
+@EnableConfigServer
 @SpringBootApplication
 public class SpringCloudConfigApplication {
     public static void main(String[] args) {
