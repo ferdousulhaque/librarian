@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: test
+  config:
+    enabled: true
+    label: main
+    import: "configserver:http://localhost:8888/"
+  profiles:
+    active: default
+server:
+  port: 8080
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

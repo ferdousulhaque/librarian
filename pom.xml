@@ -15,6 +15,7 @@
     <module>octopus</module>
       <module>users</module>
       <module>config-server</module>
+    <module>configTest</module>
   </modules>
 
   <name>librarian</name>
@@ -25,7 +26,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
-    <spring.boot.maven.plugin.version>2.7.2</spring.boot.maven.plugin.version>
+    <spring.boot.maven.plugin.version>2.8.2</spring.boot.maven.plugin.version>
     <spring.boot.dependencies.version>2.7.2</spring.boot.dependencies.version>
     <spring.cloud-version>2021.0.2</spring.cloud-version>
   </properties>
